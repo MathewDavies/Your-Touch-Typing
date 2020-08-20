@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Your Touch Typing </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Your Touch Typing</h1>
+    <div class="container">
+    <main>
+        
+        <textarea name="input-area" class="text-box" id="display-area" ></textarea>
+        <textarea name="input-area" class="text-box read-only" id="input-area" readonly ></textarea>
+        <div class="button-row">
+            <button id="confirm-button" class="btn" type="submit" >Confirm</button>
+            <button id="start-button" class="btn" type="submit" >Start</button>
+            <button id="reset-button" class="btn" type="submit" >Reset</button>
+        </div>
+    </main>
+    <aside>
+        <div class="side-text-box">
+            <p><b>Difficulty</b></p>
+            <p id="difficulty-display"> ---  </p>
+            <p><b>Scores</b></p>
+            <p>Words per minute: <span id="words-per-minute-display">--</span></p>
+            <p>Accuracy: <span id="display-accuracy">-%</span> </p>
+            
+            
+        </div>
+        <div class="side-text-box">
+            <p>Timer</p>
+            <p id="time-display">0:00</p>
+
+        </div>
+    </aside>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
